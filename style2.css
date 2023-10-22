@@ -1,0 +1,161 @@
+
+
+.api-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    /* height: 100vh; */
+    justify-content: space-between;
+    color: #fff;
+    font-family: "sans-serif";
+    padding: 20px 4%;
+    background-color: #fff;
+}
+
+.api-container h2 {
+    font-size: 3rem;
+    color: orangered;
+    margin-top: 20px;
+}
+
+.api-para {
+    margin-block: 20px;
+    color: #1f1d21;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+}
+
+.api-container .button{
+    padding: 10px 50px;
+    font-size: 1rem;
+    border: 2px solid orangered;
+    border-radius: 50px;
+    color: orangered;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.api-container .button:hover {
+    background-color: orangered;
+    color: #fff;
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 380px;
+    padding: 30px 35px;
+    border-radius: 10px;
+    box-shadow: 5px 0px 5px rgb(225, 225, 225);
+    position: relative;
+    top: 100px;
+    background-color: #fff;
+}
+
+.card img {
+    width: 60%;
+}
+
+.info-card {
+    color: #1f1d21;
+}
+
+.info-card h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.api-btns {
+    margin-top: 10px;
+}
+
+.apibtn {
+    /* border: 1px solid black; */
+    margin-right: 20px;
+    padding: 4px 16px;
+    margin-top: 20px;
+    border-radius: 50px;
+}
+
+.subscribe {
+    background-color: orangered;
+    color: #fff;
+}
+
+.apidocs {
+    border: 1px solid gray;
+    color: #000;
+}
+
+
+
+@media (max-width : 980px) {
+    .api-container {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 60px;
+    }
+    .api-info{
+        order: 1;
+        /* margin: 100px; */
+    }
+
+    .card {
+        position: relative;
+        /* top */
+        margin-bottom: 100px;
+        width: 100%;
+        box-shadow: 0px 0px 0px rgb(225, 225, 225);
+        border: 1px solid orangered;
+    }
+
+    .api-container h2 {
+        font-size: 2rem;
+        color: orangered;
+        margin-top: 20px;
+    }
+    
+    .api-container p {
+        font-size: 1rem;
+    }
+}
+
+
+.about-api {
+    color: #Fff;
+    padding: 0px 4%;
+    margin-block: 50px;
+}
+
+.about-api h1 b {
+    color: orangered;
+}
+
+.about-api h3 {
+    margin-block: 10px;
+    font-weight: 400;
+}
+
+.box-info-api {
+    width: 100%;
+    /* margin: 10px 30px; */
+    background-color: rgba(218, 134, 104, 0.407);
+    padding: 20px;
+    border-left: 2px solid rgba(252, 163, 133, 0.852);
+    max-width: 500px;
+}
+.apibody h4 {
+    font-weight: 400;
+    font-size: 2.3rem;
+}
+
+.apibody ol {
+    margin: 0px 30px;
+}
+
+.apibody ol li {
+    margin: 10px 0;
+}

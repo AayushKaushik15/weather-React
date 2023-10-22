@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    text-decoration: none;
+}
+
+body {
+    background: linear-gradient(to left, #393e46, #1c191c);
+}
+
+nav {
+    background-color: #393E46;
+    padding: 20px 4%;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar li a {
+    padding: 6px 20px;
+}
+
+.navbar li a:hover {
+    color: orangered;
+    border-radius: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar a{ 
+    color: #fff;
+}
+
+
+.nav-bar-icon {
+    /* padding: 10px; */
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.nav-bar-icon {
+    display: none;
+}
+
+
+@media (max-width : 650px) {
+    .nav-links  {
+        /* display: none !important; */
+        display: flex ;
+        flex-direction: column;
+        content: "";
+        position: absolute;
+        right: -280px;
+        top: 80px;
+        background-color: #191b1f;
+        transition: 0.3s ease-in;
+        z-index: -1;
+        padding: 10px;
+        box-shadow: 5px 5px 5px rgb(193, 193, 193);
+    }
+
+    .active {
+        right: 10px;
+    }
+    
+
+    .nav-links a {
+        width: 100%;
+        display: block;
+    }
+
+    .nav-links li a:hover {
+        background-color: rgb(249, 96, 41);
+        color: #fff;
+    }
+
+    .nav-bar-icon{
+        display: block;
+    }
+
+}
+
+
+/* Hero section Body */
+
+
+
+
+
+
+
+.hero {
+    height: 100vh;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    padding: 0px 20px;
+}
+
+
+.container {
+    position: relative;
+    top: 130px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px rgb(75, 75, 75);
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+    border-radius: 50px;
+}
+
+.form input {
+    padding: 12px 10px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 1rem;
+    background-color: #dfdfdf;
+    border-radius: 50px;
+    margin-right: 5px;
+}
+
+.form button {
+    border: none;
+    padding: 0 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: orangered;
+    color: #fbfbfb;
+    border-radius: 50px;
+}
+
+.temp {
+    text-align: center;
+    margin-block: 30px;
+}
+
+.temp h1 {
+    font-size: 3rem;
+    color: orangered;
+}
+
+.temp h2 {
+    font-size: 3rem;
+    color: #393E46;
+}
+
+.temp i {
+    font-size: 5rem;
+    margin-bottom: 10px;
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #707680;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    /* border: 3px solid rgb(176, 176, 176); */
+}
+
+.wind, .humidity{
+    display: flex;
+    align-items: center;
+}
+
+.info i {
+    margin: 10px;
+    font-size: 2rem;
+}
+
+.min-info-two {
+    display: flex;
+    flex-direction: column;
+}
+
+.span-info {
+    font-size: 0.8rem;
+}
+
+
+
+.sun {
+    display: flex;
+    align-items: center;
+}
+
+
+.sun > span{
+    margin: 0px 5px;
+    font-size: 2.5rem;
+}
+
+.info-two {
+    background-color: #393E46;
+}
+
+.weather {
+    background-color: #252A34;
+    color: #fff;
+    padding: 3px 10px;
+    font-size: 1rem;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.temp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temp-F {
+    cursor: pointer;
+    border: 1px solid black;
+    padding: 0px 10px;
+    border-radius: 50px;
+    transition: 0.2s ease;
+}
+
+.temp-F:hover {
+    background-color: #252A34;
+    color: #fff;
+}
+
+.info .sunO {
+    font-size: 0.9rem;
+}
+
+.country {
+    background-color: #191b1f;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: inline;
+}
+
+.country {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.country span {
+    font-size: 0.9rem;
+}
+
+.icon-pack > span {
+    font-size: 5rem;
+}
+
+
+
+
+
+
+
+
+@media (max-width : 410px) {
+    .info i {
+        margin: 10px;
+        font-size: 1rem;
+    }
+
+    .sun > span{
+        margin: 0px 5px;
+        font-size: 1.5rem;
+    }
+
+    .temp h1 {
+        font-size: 1.5rem;
+    }
+
+    .temp h2 {
+        font-size: 2ch;
+    }
+}
+
+
+
+.error {
+    color: #fff;
+    text-align: center;
+    background-color: #707680;
+    padding: 10px;
+}
+
